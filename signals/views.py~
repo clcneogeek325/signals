@@ -1,0 +1,7 @@
+from django.shortcuts import render_ro_response
+from django.template import RequestContext
+
+
+def view_index(request):
+	return render_ro_response("index.html",
+		context_instance=RequestContext(request))

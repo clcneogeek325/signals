@@ -1,0 +1,6 @@
+<h4>Ejemplo sobre señales</h4>
+<form action="" method="POST">
+	{% csrf_token %}
+	{{form.as_p}}
+	<p><input type="submit" value="Guardar" /></p>
+</form>
